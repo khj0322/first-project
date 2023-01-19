@@ -107,3 +107,39 @@ const plusresult = calculator1.add(2,4);
 const minusresult = calculator1.minus(plusresult,10);
 console.log(plusresult);
 console.log(minusresult);
+
+const age = parseInt(prompt("How old are you?"));
+console.log(age);
+
+if(isNaN(age) || age <0){
+    console.log("Please write a real positive number");
+}else if(age < 18 ){
+    console.log("You are too young.");
+}else if(age >=18 && age <= 50){
+    console.log("You can dringk");
+}else if(age > 50 && age <=80){
+    console.log("You should exercise");
+}else{
+    console.log("You can do whatever you want");
+}
+
+//already interacted HTML
+document.title="Hello! From Js"
+
+//You can change anywhere in id
+//const title = document.getElementById("title");
+//title.innerText = "Got you!";
+
+//console.log(title.className);
+//console.log(title.innerText);
+
+const hellos = document.getElementsByClassName("hello");
+console.log(hellos);
+
+//querySelector is returns first element
+//if you return all elemnet,you use querySelctorAll
+//id(#),class(.)
+const title = document.querySelector(".hello h1");
+
+
+console.log(title);
